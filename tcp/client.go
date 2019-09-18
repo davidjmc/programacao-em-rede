@@ -19,6 +19,7 @@ func main() {
 	conn, err := net.Dial("tcp", endpoint)
 	if err != nil {
 		fmt.Println(err)
+		fmt.Print(err)
 		return
 	}
 	defer conn.Close()
